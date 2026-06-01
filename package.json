@@ -1,0 +1,40 @@
+{
+  "name": "@lifeos/oura",
+  "version": "0.3.0",
+  "private": true,
+  "description": "First-party Oura Ring MCP server (stdio + multi-tenant HTTP) and CLI — sleep, readiness, activity, and generic v2 collection access",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bin": {
+    "oura": "dist/cli.js",
+    "oura-mcp": "dist/mcp.js",
+    "oura-server": "dist/server.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/cli.js dist/mcp.js dist/server.js",
+    "dev": "tsx src/cli.ts",
+    "mcp": "tsx src/mcp.ts",
+    "server": "tsx src/server.ts",
+    "start": "node dist/server.js",
+    "test": "node --import tsx --test 'src/**/*.test.ts'",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "commander": "^13.1.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
