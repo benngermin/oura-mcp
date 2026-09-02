@@ -81,7 +81,7 @@ When the user asks to "review everything," "all my data," or wants a comprehensi
    - Lead with sleep score and readiness score as headline numbers
    - Highlight anything notable (low scores, high HRV, unusual patterns)
    - Include key activity metrics (steps, calories)
-   - Keep it conversational — 3-5 sentences max for the overview
+   - Keep it conversational: a short overview that a reader can scan in one pass, headline numbers first, detail only where something is notable
 3. Offer: "Want me to dig into sleep details, trends, or anything specific?"
 
 ### Sleep (`sleep`)
